@@ -34,7 +34,7 @@ class LoginScreen extends StatelessWidget {
                   backgroundColor: ColorsApp.blackLight,
                   textStyle: TextStyles.font18WihtBold,
                   onPressed: () {
-                    context.pushNamed(Routes.homeScreen);
+                    context.pushNamed(Routes.layoutScreen);
                   },
                 ),
                 virticalSpace(18),

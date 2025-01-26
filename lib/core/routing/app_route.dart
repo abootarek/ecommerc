@@ -29,9 +29,12 @@ class AppRouter {
           builder: (context) => const RejScreen(),
         );
       //HomeScreen
-      case Routes.homeScreen:
+      case Routes.layoutScreen:
         return MaterialPageRoute(
-          builder: (context) => const HomeScreen(),
+          builder: (context) => BlocProvider(
+            create: (context) => ShopCubit(),
+            child: const LayoutScreens(),
+          ),
         );
 
       // Error Message
