@@ -4,8 +4,8 @@ import 'package:shopapp/core/theme/colors.dart';
 import 'package:shopapp/features/layout_screen/logic/cubit/layout_cubit.dart';
 import 'package:shopapp/features/layout_screen/logic/cubit/layout_state.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class LayoutScreens extends StatelessWidget {
+  const LayoutScreens({super.key});
 
   @override
   Widget build(BuildContext context) {
