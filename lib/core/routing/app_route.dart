@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shopapp/core/routing/routes.dart';
-import 'package:shopapp/features/home/ui/home_screen.dart';
+import 'package:shopapp/features/layout_screen/logic/cubit/layout_cubit.dart';
+import 'package:shopapp/features/layout_screen/ui/layout_screen.dart';
 import 'package:shopapp/features/auth/login/ui/login_screen.dart';
 import 'package:shopapp/features/onbording/ui/onbording_screen.dart';
 import 'package:shopapp/features/auth/register/ui/rej_screen.dart';

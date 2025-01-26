@@ -3,7 +3,7 @@ import 'package:shopapp/core/theme/colors.dart';
 import 'package:shopapp/features/auth/login/ui/login_screen.dart';
 import 'dart:async';
 
-import 'package:shopapp/features/home/ui/home_screen.dart';
+import 'package:shopapp/features/layout_screen/ui/layout_screen.dart';
 import 'package:shopapp/features/onbording/ui/onbording_screen.dart';
 import 'package:shopapp/features/splash_screen/ui/widgets/shop_name_and_wellcom.dart';
 
