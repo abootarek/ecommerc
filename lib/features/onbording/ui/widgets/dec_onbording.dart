@@ -84,7 +84,7 @@ class Dec_Page_View extends StatelessWidget {
                     if (pageController.page! < 2) {
                       pageController.nextPage(
                         duration: const Duration(milliseconds: 500),
-                        curve: Curves.fastLinearToSlowEaseIn,
+                        curve: Curves.linear,
                       );
                     } else {
                       context.pushReplacementNamed(Routes.loginScreen);

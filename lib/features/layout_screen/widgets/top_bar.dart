@@ -12,6 +12,11 @@ class TopBar extends StatelessWidget {
         Image.asset(
           'assets/images/icon.png',
         ),
+        const Spacer(),
+        IconButton(
+          onPressed: () {},
+          icon: const Icon(Icons.search),
+        ),
       ],
     );
   }
