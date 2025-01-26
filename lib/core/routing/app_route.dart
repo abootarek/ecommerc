@@ -28,7 +28,7 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (context) => const RejScreen(),
         );
-      //HomeScreen
+      //layoutScreen
       case Routes.layoutScreen:
         return MaterialPageRoute(
           builder: (context) => BlocProvider(
