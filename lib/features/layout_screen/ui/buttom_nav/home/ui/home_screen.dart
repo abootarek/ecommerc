@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shopapp/core/helper/six_box.dart';
-import 'package:shopapp/features/layout_screen/ui/buttom_nav/home/widgets/list_view_gategories.dart';
-import 'package:shopapp/features/layout_screen/ui/buttom_nav/home/widgets/page_view_category.dart';
-import 'package:shopapp/features/layout_screen/ui/buttom_nav/home/widgets/search_item.dart';
+import 'package:shopapp/features/layout_screen/ui/buttom_nav/home/ui/widgets/list_view_gategories.dart';
+import 'package:shopapp/features/layout_screen/ui/buttom_nav/home/ui/widgets/page_view_category.dart';
+import 'package:shopapp/features/layout_screen/ui/buttom_nav/home/ui/widgets/search_item.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
