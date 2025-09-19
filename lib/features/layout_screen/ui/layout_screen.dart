@@ -14,19 +14,10 @@ class LayoutScreens extends StatelessWidget {
       listener: (context, state) {},
       builder: (context, state) {
         return Scaffold(
-          appBar: AppBar(
-            automaticallyImplyLeading: false, // الغاء الزر الرجوع
-            backgroundColor: ColorsApp.wihteColor,
-            elevation: 0,
-            title: Image.asset(
-              'assets/images/icon.png',
-            ),
-            actions: const [],
-          ),
           body: cubit.screensButtom[cubit.currentIndex],
           bottomNavigationBar: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
-            selectedItemColor: ColorsApp.blueLight,
+            selectedItemColor: ColorsApp.blackLight,
             unselectedItemColor: ColorsApp.grayLight,
             // showUnselectedLabels: false,
             currentIndex: cubit.currentIndex,

@@ -18,7 +18,10 @@ class ShopApp extends StatelessWidget {
         return MaterialApp(
           title: 'Shop App',
           debugShowCheckedModeBanner: false,
-          theme: ThemeData(scaffoldBackgroundColor: ColorsApp.wihteColor),
+          theme: ThemeData(
+            scaffoldBackgroundColor: ColorsApp.wihteColor,
+            fontFamily: 'Cairo',
+          ),
           onGenerateRoute: appRouter.generateRoute,
           initialRoute: Routes.splashScreen,
         );
