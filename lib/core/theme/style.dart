@@ -30,6 +30,11 @@ class TextStyles {
     fontWeight: FontWeightHelper.normal,
     color: ColorsApp.blackLight,
   );
+  static TextStyle font16blackLightMedium = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: ColorsApp.blackLight,
+  );
   static TextStyle font15grayLightNormal = TextStyle(
     fontSize: 15.sp,
     fontWeight: FontWeightHelper.normal,
@@ -44,5 +49,10 @@ class TextStyles {
     fontSize: 15.sp,
     fontWeight: FontWeightHelper.normal,
     color: ColorsApp.blueLight,
+  );
+  static TextStyle font15green = TextStyle(
+    fontSize: 15.sp,
+    fontWeight: FontWeightHelper.normal,
+    color: ColorsApp.gren,
   );
 }

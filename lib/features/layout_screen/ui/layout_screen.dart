@@ -17,16 +17,19 @@ class LayoutScreens extends StatelessWidget {
           body: cubit.screensButtom[cubit.currentIndex],
           bottomNavigationBar: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
-            selectedItemColor: ColorsApp.blueLight,
+            selectedItemColor: ColorsApp.blackLight,
             unselectedItemColor: ColorsApp.grayLight,
             // showUnselectedLabels: false,
-
             currentIndex: cubit.currentIndex,
             onTap: cubit.changeIndex,
             items: const [
               BottomNavigationBarItem(
                 icon: Icon(Icons.home),
                 label: 'Home',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.category),
+                label: 'Categories',
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.favorite),

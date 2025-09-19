@@ -10,7 +10,6 @@ class ShopApp extends StatelessWidget {
   const ShopApp({super.key, required this.appRouter});
   @override
   Widget build(BuildContext context) {
-    // 
     return ScreenUtilInit(
       designSize: const Size(375, 812),
       minTextAdapt: true,
@@ -19,7 +18,10 @@ class ShopApp extends StatelessWidget {
         return MaterialApp(
           title: 'Shop App',
           debugShowCheckedModeBanner: false,
-          theme: ThemeData(scaffoldBackgroundColor: ColorsApp.wihteColor),
+          theme: ThemeData(
+            scaffoldBackgroundColor: ColorsApp.wihteColor,
+            fontFamily: 'Cairo',
+          ),
           onGenerateRoute: appRouter.generateRoute,
           initialRoute: Routes.splashScreen,
         );

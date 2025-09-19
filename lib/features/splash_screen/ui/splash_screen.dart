@@ -1,11 +1,11 @@
-import 'package:flutter/material.dart';
-import 'package:shopapp/core/theme/colors.dart';
-import 'package:shopapp/features/auth/login/ui/login_screen.dart';
 import 'dart:async';
 
-import 'package:shopapp/features/layout_screen/ui/layout_screen.dart';
-import 'package:shopapp/features/onbording/ui/onbording_screen.dart';
-import 'package:shopapp/features/splash_screen/ui/widgets/shop_name_and_wellcom.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:shopapp/core/helper/extintion.dart';
+import 'package:shopapp/core/routing/routes.dart';
+import 'package:shopapp/core/theme/colors.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -37,10 +37,7 @@ class _SplashScreenState extends State<SplashScreen>
 
     // Navigate to next screen after splash
     Timer(const Duration(seconds: 4), () {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => OnbordingScreen()),
-      );
+      context.pushNamed(Routes.layoutScreen);
     });
   }
 
@@ -57,7 +54,13 @@ class _SplashScreenState extends State<SplashScreen>
       body: Center(
         child: ScaleTransition(
           scale: _animation,
-          child: const ImageAndWellcom(),
+          child: SizedBox(
+            width: 200.w,
+            height: 200.h,
+            child: SvgPicture.asset(
+              'assets/svg/Grabber.svg',
+            ),
+          ),
         ),
       ),
     );

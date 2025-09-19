@@ -1,6 +1,6 @@
 class ConstansApi {
   // Base URL
-  static const String apiBaseUrl = "";
+  static const String apiBaseUrl = "https://student.valuxapps.com/api/";
 }
 
 class ApiErrors {
